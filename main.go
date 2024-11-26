@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Eng-Daniel-Hermel/godesde0/files"
+	"github.com/Eng-Daniel-Hermel/godesde0/funciones"
 )
 
 func main() {
@@ -37,5 +37,9 @@ func main() {
 
 	//files.SumaTabla()
 
-	files.LeoArchivo()
+	//files.LeoArchivo()
+
+	//funciones.Calculos()
+	funciones.LlamarClosure()
+
 }
