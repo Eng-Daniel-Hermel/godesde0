@@ -1,7 +1,7 @@
 package main
 
 import (
-	arreglosslices "github.com/Eng-Daniel-Hermel/godesde0/arreglos_slices"
+	"github.com/Eng-Daniel-Hermel/godesde0/mapas"
 )
 
 func main() {
@@ -44,6 +44,7 @@ func main() {
 	//funciones.Exponencia(2)
 	//arreglosslices.MuestroArreglos()
 	//arreglosslices.MuestroSlice()
-	arreglosslices.Capacidad()
+	//arreglosslices.Capacidad()
+	mapas.MostraMapas()
 
 }
