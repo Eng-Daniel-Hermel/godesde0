@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Eng-Daniel-Hermel/godesde0/funciones"
+	arreglosslices "github.com/Eng-Daniel-Hermel/godesde0/arreglos_slices"
 )
 
 func main() {
@@ -40,6 +40,10 @@ func main() {
 	//files.LeoArchivo()
 
 	//funciones.Calculos()
-	funciones.LlamarClosure()
+	//funciones.LlamarClosure()
+	//funciones.Exponencia(2)
+	//arreglosslices.MuestroArreglos()
+	//arreglosslices.MuestroSlice()
+	arreglosslices.Capacidad()
 
 }
