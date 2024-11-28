@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Eng-Daniel-Hermel/godesde0/mapas"
+	"github.com/Eng-Daniel-Hermel/godesde0/modelos/users"
 )
 
 func main() {
@@ -45,6 +45,7 @@ func main() {
 	//arreglosslices.MuestroArreglos()
 	//arreglosslices.MuestroSlice()
 	//arreglosslices.Capacidad()
-	mapas.MostraMapas()
+	//mapas.MostrarMapas()
+	users.AltaUsuario()
 
 }
