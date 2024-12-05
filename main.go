@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/Eng-Daniel-Hermel/godesde0/defer_panic"
+	"fmt"
+
+	"github.com/Eng-Daniel-Hermel/godesde0/goroutines"
 )
 
 func main() {
@@ -56,6 +58,13 @@ func main() {
 
 	//defer_panic.VemosDefer()
 
-	defer_panic.EjemploPanic()
+	//defer_panic.EjemploPanic()
+
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentooo("Daniel Hermel", canal1)
+	defer func() {
+		<-canal1
+	}()
+	fmt.Println("Estoy aqui")
 
 }

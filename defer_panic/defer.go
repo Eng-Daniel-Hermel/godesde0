@@ -2,6 +2,7 @@ package defer_panic
 
 import (
 	"fmt"
+	"log"
 )
 
 func VemosDefer() {
@@ -12,6 +13,12 @@ func VemosDefer() {
 }
 
 func EjemploPanic() {
+	defer func() {
+		reco := recover()
+		if reco != nil {
+			log.Fatalf("Ocurrió un error que generó Panic \n %v", reco)
+		}
+	}()
 	a := 1
 	if a == 1 {
 		panic("Se encontro el valor 1")
